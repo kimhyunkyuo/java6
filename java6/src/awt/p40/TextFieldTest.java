@@ -52,9 +52,11 @@ public class TextFieldTest implements ActionListener {
           if(id.getText().equals(STRING_ID)&&pwd.getText().equals(STRING_PWD)) {
           msg.setText("로그인성공");
           f2.setVisible(true);
+          
           }else {
              System.out.println("로그인 실패");
              msg.setText("로그인 실패");
+             System.exit(0);
           }
     }
 
